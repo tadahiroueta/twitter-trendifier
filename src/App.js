@@ -41,7 +41,7 @@ function App() {
     } else setIsHashtagValid(true)
 
     // add document to DB
-    await fetch('http://server.trendifier.tadahiroueta.com', {
+    await fetch('https://twitter-trendifier-server.herokuapp.com/', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
