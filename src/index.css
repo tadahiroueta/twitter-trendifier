@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #14171A;
+  color: #AAB8C2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.blue {
+  color: #1DA1F2
+}
+
+.App {
+  margin: 8vh 15% 0; 
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #E1E8ED
+}
+
+.form {
+  margin: 13vh 15% 0;
+  display: block;
+}
+
+.input {
+  margin: 3vh 2.5%;
+  border: none;
+  background-color: #14171A;
+  width: 95%;
+  color: #AAB8C2;
+  font-size: 2rem;
+}
+
+.checkbox-container {
+  margin: 1vh 0 5vh 15%
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.checkbox-label {
+  margin-left: 1.2rem;
+  color: #AAB8C2;
+  font-size: 1.5rem;
+}
+
+.algorithm-container {
+  margin: 5vh 5% 0;
+}
+
+.algorithm-prompt {
+  color: #E1E8ED;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.radio-container {
+  margin-left: 7.5%;
+  display: block;
+}
+
+.radio {
+  margin-bottom: 1.5rem;
+}
+
+.radio-label {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-bottom {
+  display: inline;
+  text-align: right;
+}
+
+.error-message {
+  float: right;
+  transform: translate(0, 0.8rem);
+  margin: 0 7.5%;
+  color: red;
+}
+
+.button {
+  float: right;
+  border: 2px solid #1DA1F2;
+  border-radius: 5px;
+  display: inline;
+  background-color: #14171A;
+  color: #1DA1F2;
+  font-size: 1.5rem;
+  transition: all 0.8s;
+}
+
+.checked:focus {
+  color: #14171A;
+  box-shadow: inset 0 0 0 2rem #1DA1F2;
+}
+
+.description {
+  margin: 13vh 0 5vh 0;
+  font-size: larger;
+  text-align: center;
+}
