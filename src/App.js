@@ -16,6 +16,8 @@ function App() {
       return { ...prev, ...value };
     });
   }
+  
+  const cleanHashtag = (hashtag) => hashtag.startsWith("#") ? hashtag.substring(1).toLowerCase() : hashtag.toLowerCase();
 
   async function handleSubmission(e) {
     // to prevent refreshing page
@@ -46,7 +48,7 @@ function App() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ ...form })
+      body: JSON.stringify({ ...form, hashtag: cleanHashtag(hashtag) })
     })
     .catch(error => window.alert(error))
     setIsSent(true)
